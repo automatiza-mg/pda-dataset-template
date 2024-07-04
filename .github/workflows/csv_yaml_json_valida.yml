@@ -1,4 +1,4 @@
-name: CKAN
+name: csv_yaml_json_valida
 
 on:
   push:
