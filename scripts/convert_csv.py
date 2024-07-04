@@ -40,7 +40,7 @@ def convert_csv(file, aba=None):
     read_file.to_csv (f'dataset/data/{csv_name}.csv', \
                     index = None, \
                     header=True, \
-                    sep = ';', \
+                    sep = ',', \
                     decimal = ',', \
                     encoding = 'utf-8-sig', \
                     na_rep = ""\
