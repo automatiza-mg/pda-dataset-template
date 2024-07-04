@@ -43,8 +43,8 @@ def convert_csv(file, aba=None):
                     sep = ',', \
                     decimal = ',', \
                     encoding = 'utf-8-sig', \
-                    na_rep = ""\
-                    )
+                    na_rep = "",
+                    mode='a') # Append mode
 
 def snake_small_case(column):
   column_lower = column.lower()
