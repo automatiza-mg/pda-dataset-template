@@ -1,6 +1,6 @@
 {
   "version": "4.16.6",
-  "time": 0.07,
+  "time": 0.111,
   "errors": [],
   "tasks": [
     {
@@ -79,13 +79,13 @@
         "scheme": "file",
         "title": "Insira um título humanamente legível para este recurso.",
         "stats": {
-          "hash": "caaed501be239075110f6e2a36554b53",
-          "bytes": 99572,
+          "hash": "96f6548e6dcbc0e708d6026f920e7dc0",
+          "bytes": 199141,
           "fields": 15,
-          "rows": 1044
+          "rows": 2089
         }
       },
-      "time": 0.058,
+      "time": 0.1,
       "scope": [
         "hash-count-error",
         "byte-count-error",
@@ -107,16 +107,297 @@
         "unique-error"
       ],
       "partial": false,
-      "errors": [],
+      "errors": [
+        {
+          "cell": "orgao",
+          "fieldName": "orgao",
+          "fieldNumber": 1,
+          "fieldPosition": 1,
+          "cells": [
+            "orgao",
+            "masp_adm",
+            "nome",
+            "masp",
+            "adm",
+            "carreira",
+            "nivelatual",
+            "grau_atual",
+            "nivelnovo",
+            "graunovo",
+            "grnatureza",
+            "sqnatureza",
+            "dtpublicacao",
+            "dtinicio",
+            "simbolo"
+          ],
+          "rowNumber": 1045,
+          "rowPosition": 1046,
+          "code": "type-error",
+          "name": "Type Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "type is \"integer/default\"",
+          "message": "Type error in the cell \"orgao\" in row \"1046\" and field \"orgao\" at position \"1\": type is \"integer/default\"",
+          "description": "The value does not match the schema type and format for this field."
+        },
+        {
+          "cell": "masp_adm",
+          "fieldName": "masp_adm",
+          "fieldNumber": 2,
+          "fieldPosition": 2,
+          "cells": [
+            "orgao",
+            "masp_adm",
+            "nome",
+            "masp",
+            "adm",
+            "carreira",
+            "nivelatual",
+            "grau_atual",
+            "nivelnovo",
+            "graunovo",
+            "grnatureza",
+            "sqnatureza",
+            "dtpublicacao",
+            "dtinicio",
+            "simbolo"
+          ],
+          "rowNumber": 1045,
+          "rowPosition": 1046,
+          "code": "type-error",
+          "name": "Type Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "type is \"integer/default\"",
+          "message": "Type error in the cell \"masp_adm\" in row \"1046\" and field \"masp_adm\" at position \"2\": type is \"integer/default\"",
+          "description": "The value does not match the schema type and format for this field."
+        },
+        {
+          "cell": "masp",
+          "fieldName": "masp",
+          "fieldNumber": 4,
+          "fieldPosition": 4,
+          "cells": [
+            "orgao",
+            "masp_adm",
+            "nome",
+            "masp",
+            "adm",
+            "carreira",
+            "nivelatual",
+            "grau_atual",
+            "nivelnovo",
+            "graunovo",
+            "grnatureza",
+            "sqnatureza",
+            "dtpublicacao",
+            "dtinicio",
+            "simbolo"
+          ],
+          "rowNumber": 1045,
+          "rowPosition": 1046,
+          "code": "type-error",
+          "name": "Type Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "type is \"integer/default\"",
+          "message": "Type error in the cell \"masp\" in row \"1046\" and field \"masp\" at position \"4\": type is \"integer/default\"",
+          "description": "The value does not match the schema type and format for this field."
+        },
+        {
+          "cell": "adm",
+          "fieldName": "adm",
+          "fieldNumber": 5,
+          "fieldPosition": 5,
+          "cells": [
+            "orgao",
+            "masp_adm",
+            "nome",
+            "masp",
+            "adm",
+            "carreira",
+            "nivelatual",
+            "grau_atual",
+            "nivelnovo",
+            "graunovo",
+            "grnatureza",
+            "sqnatureza",
+            "dtpublicacao",
+            "dtinicio",
+            "simbolo"
+          ],
+          "rowNumber": 1045,
+          "rowPosition": 1046,
+          "code": "type-error",
+          "name": "Type Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "type is \"integer/default\"",
+          "message": "Type error in the cell \"adm\" in row \"1046\" and field \"adm\" at position \"5\": type is \"integer/default\"",
+          "description": "The value does not match the schema type and format for this field."
+        },
+        {
+          "cell": "grnatureza",
+          "fieldName": "grnatureza",
+          "fieldNumber": 11,
+          "fieldPosition": 11,
+          "cells": [
+            "orgao",
+            "masp_adm",
+            "nome",
+            "masp",
+            "adm",
+            "carreira",
+            "nivelatual",
+            "grau_atual",
+            "nivelnovo",
+            "graunovo",
+            "grnatureza",
+            "sqnatureza",
+            "dtpublicacao",
+            "dtinicio",
+            "simbolo"
+          ],
+          "rowNumber": 1045,
+          "rowPosition": 1046,
+          "code": "type-error",
+          "name": "Type Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "type is \"integer/default\"",
+          "message": "Type error in the cell \"grnatureza\" in row \"1046\" and field \"grnatureza\" at position \"11\": type is \"integer/default\"",
+          "description": "The value does not match the schema type and format for this field."
+        },
+        {
+          "cell": "sqnatureza",
+          "fieldName": "sqnatureza",
+          "fieldNumber": 12,
+          "fieldPosition": 12,
+          "cells": [
+            "orgao",
+            "masp_adm",
+            "nome",
+            "masp",
+            "adm",
+            "carreira",
+            "nivelatual",
+            "grau_atual",
+            "nivelnovo",
+            "graunovo",
+            "grnatureza",
+            "sqnatureza",
+            "dtpublicacao",
+            "dtinicio",
+            "simbolo"
+          ],
+          "rowNumber": 1045,
+          "rowPosition": 1046,
+          "code": "type-error",
+          "name": "Type Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "type is \"integer/default\"",
+          "message": "Type error in the cell \"sqnatureza\" in row \"1046\" and field \"sqnatureza\" at position \"12\": type is \"integer/default\"",
+          "description": "The value does not match the schema type and format for this field."
+        },
+        {
+          "cell": "dtpublicacao",
+          "fieldName": "dtpublicacao",
+          "fieldNumber": 13,
+          "fieldPosition": 13,
+          "cells": [
+            "orgao",
+            "masp_adm",
+            "nome",
+            "masp",
+            "adm",
+            "carreira",
+            "nivelatual",
+            "grau_atual",
+            "nivelnovo",
+            "graunovo",
+            "grnatureza",
+            "sqnatureza",
+            "dtpublicacao",
+            "dtinicio",
+            "simbolo"
+          ],
+          "rowNumber": 1045,
+          "rowPosition": 1046,
+          "code": "type-error",
+          "name": "Type Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "type is \"date/default\"",
+          "message": "Type error in the cell \"dtpublicacao\" in row \"1046\" and field \"dtpublicacao\" at position \"13\": type is \"date/default\"",
+          "description": "The value does not match the schema type and format for this field."
+        },
+        {
+          "cell": "dtinicio",
+          "fieldName": "dtinicio",
+          "fieldNumber": 14,
+          "fieldPosition": 14,
+          "cells": [
+            "orgao",
+            "masp_adm",
+            "nome",
+            "masp",
+            "adm",
+            "carreira",
+            "nivelatual",
+            "grau_atual",
+            "nivelnovo",
+            "graunovo",
+            "grnatureza",
+            "sqnatureza",
+            "dtpublicacao",
+            "dtinicio",
+            "simbolo"
+          ],
+          "rowNumber": 1045,
+          "rowPosition": 1046,
+          "code": "type-error",
+          "name": "Type Error",
+          "tags": [
+            "#table",
+            "#row",
+            "#cell"
+          ],
+          "note": "type is \"date/default\"",
+          "message": "Type error in the cell \"dtinicio\" in row \"1046\" and field \"dtinicio\" at position \"14\": type is \"date/default\"",
+          "description": "The value does not match the schema type and format for this field."
+        }
+      ],
       "stats": {
-        "errors": 0
+        "errors": 8
       },
-      "valid": true
+      "valid": false
     }
   ],
   "stats": {
-    "errors": 0,
+    "errors": 8,
     "tasks": 1
   },
-  "valid": true
+  "valid": false
 }
