@@ -9,6 +9,11 @@ resources:
     profile: tabular-data-resource
     schema:
       fields:
+        - name: orgao
+          type: integer
+          title: código do órgão
+          constraints:
+            required: true
         - name: masp_adm
           type: string
           title: MASP com admissão concatenada
@@ -223,7 +228,7 @@ resources:
           type: string
           title: Nível ATUAL da carreira do servidor
           constraints:
-            required: true
+            required: false
             enum:
             - 'I'
             - 'II'
@@ -268,7 +273,7 @@ resources:
           type: string
           title: Nível NOVO da carreira do servidor
           constraints:
-            required: true
+            required: false
             enum:
             - 'I'
             - 'II'
