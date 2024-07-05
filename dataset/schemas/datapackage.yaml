@@ -321,6 +321,12 @@ resources:
           title: Sequencial da natureza da progressão ou progressão
           constraints:
             enum:
+            - '034'
+            - '035'
+            - '070'
+            - '071'
+            - '111'
+            - '112'
             - '61' 
             - '63' 
             - '138' 
