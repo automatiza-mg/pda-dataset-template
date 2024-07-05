@@ -1,0 +1,122 @@
+{
+  "version": "4.16.6",
+  "time": 0.07,
+  "errors": [],
+  "tasks": [
+    {
+      "resource": {
+        "description": "Insira a descrição/explicação detalhada deste recurso.",
+        "encoding": "utf-8-sig",
+        "format": "csv",
+        "hashing": "md5",
+        "name": "template",
+        "path": "data/template.csv",
+        "profile": "tabular-data-resource",
+        "schema": {
+          "fields": [
+            {
+              "name": "orgao",
+              "type": "integer"
+            },
+            {
+              "name": "masp_adm",
+              "type": "integer"
+            },
+            {
+              "name": "nome",
+              "type": "string"
+            },
+            {
+              "name": "masp",
+              "type": "integer"
+            },
+            {
+              "name": "adm",
+              "type": "integer"
+            },
+            {
+              "name": "carreira",
+              "type": "string"
+            },
+            {
+              "name": "nivelatual",
+              "type": "any"
+            },
+            {
+              "name": "grau_atual",
+              "type": "string"
+            },
+            {
+              "name": "nivelnovo",
+              "type": "any"
+            },
+            {
+              "name": "graunovo",
+              "type": "string"
+            },
+            {
+              "name": "grnatureza",
+              "type": "integer"
+            },
+            {
+              "name": "sqnatureza",
+              "type": "integer"
+            },
+            {
+              "name": "dtpublicacao",
+              "type": "date"
+            },
+            {
+              "name": "dtinicio",
+              "type": "date"
+            },
+            {
+              "name": "simbolo",
+              "type": "string"
+            }
+          ]
+        },
+        "scheme": "file",
+        "title": "Insira um título humanamente legível para este recurso.",
+        "stats": {
+          "hash": "caaed501be239075110f6e2a36554b53",
+          "bytes": 99572,
+          "fields": 15,
+          "rows": 1044
+        }
+      },
+      "time": 0.058,
+      "scope": [
+        "hash-count-error",
+        "byte-count-error",
+        "field-count-error",
+        "row-count-error",
+        "blank-header",
+        "extra-label",
+        "missing-label",
+        "blank-label",
+        "duplicate-label",
+        "incorrect-label",
+        "blank-row",
+        "primary-key-error",
+        "foreign-key-error",
+        "extra-cell",
+        "missing-cell",
+        "type-error",
+        "constraint-error",
+        "unique-error"
+      ],
+      "partial": false,
+      "errors": [],
+      "stats": {
+        "errors": 0
+      },
+      "valid": true
+    }
+  ],
+  "stats": {
+    "errors": 0,
+    "tasks": 1
+  },
+  "valid": true
+}
