@@ -1,0 +1,82 @@
+{
+  "name": "pda-dataset-template",
+  "profile": "data-package",
+  "resources": [
+    {
+      "description": "Insira a descrição/explicação detalhada deste recurso.",
+      "encoding": "utf-8-sig",
+      "format": "csv",
+      "hashing": "md5",
+      "name": "template",
+      "path": "data/template.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "orgao",
+            "type": "integer"
+          },
+          {
+            "name": "masp_adm",
+            "type": "integer"
+          },
+          {
+            "name": "nome",
+            "type": "string"
+          },
+          {
+            "name": "masp",
+            "type": "integer"
+          },
+          {
+            "name": "adm",
+            "type": "integer"
+          },
+          {
+            "name": "carreira",
+            "type": "string"
+          },
+          {
+            "name": "nivelatual",
+            "type": "any"
+          },
+          {
+            "name": "grau_atual",
+            "type": "string"
+          },
+          {
+            "name": "nivelnovo",
+            "type": "any"
+          },
+          {
+            "name": "graunovo",
+            "type": "string"
+          },
+          {
+            "name": "grnatureza",
+            "type": "integer"
+          },
+          {
+            "name": "sqnatureza",
+            "type": "integer"
+          },
+          {
+            "name": "dtpublicacao",
+            "type": "date"
+          },
+          {
+            "name": "dtinicio",
+            "type": "date"
+          },
+          {
+            "name": "simbolo",
+            "type": "string"
+          }
+        ]
+      },
+      "scheme": "file",
+      "title": "Insira um título humanamente legível para este recurso."
+    }
+  ],
+  "title": "Pda dataset template"
+}
