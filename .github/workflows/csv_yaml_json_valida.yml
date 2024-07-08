@@ -3,7 +3,7 @@ name: csv_yaml_json_valida
 on:
   push:
     paths:
-      - 'dataset/**'
+      #- 'dataset/**'
       - 'upload/**'
 
 jobs:
