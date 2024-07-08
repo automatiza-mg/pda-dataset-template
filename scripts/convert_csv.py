@@ -31,17 +31,6 @@ def convert_csv(file, aba=None):
     new_columns = [snake_small_case(column.strip()) for column in read_file.columns]
     read_file.columns = new_columns
 
-    # Identify potential date columns (assuming YYYY-MM-DD format)
-    potential_date_cols = [col for col in new_columns if re.match(r'\d{4}-\d{2}-\d{2}$', read_file[col].head(1).values[0])]
-
-    # Convert potential date columns to date type (excluding time)
-    for col in potential_date_cols:
-        try:
-            read_file[col] = pd.to_datetime(read_file[col], format='%Y-%m-%d').dt.date
-        except (ValueError, AttributeError):
-            # Handle cases where conversion fails (e.g., non-convertible formats)
-            pass
-
     for column in new_columns:
         # Remove leading/trailing whitespaces from each cell value
         read_file[column] = [value.strip() if isinstance(value, str) else value for value in read_file[column]]
