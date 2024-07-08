@@ -35,9 +35,18 @@ def convert_csv(file, aba=None):
         # Remove leading/trailing whitespaces from each cell value
         read_file[column] = [value.strip() if isinstance(value, str) else value for value in read_file[column]]
 
-    # Save to CSV with append mode (but overwrite existing rows with duplicates)
-    read_file.to_csv(f'dataset/data/{file.split(".xls")[0]}.csv' if aba is None else f'dataset/data/{aba}.csv',
-                     index=False, header=True, sep=',', decimal=',', encoding='utf-8-sig', na_rep="", mode='w')  # Change mode to 'w' to overwrite duplicates
+    # Read existing data (if any)
+    try:
+        existing_data = pd.read_csv(f'dataset/data/{file.split(".xls")[0]}.csv' if aba is None else f'dataset/data/{aba}.csv')
+    except FileNotFoundError:
+        existing_data = pd.DataFrame()  # Create empty DataFrame if file doesn't exist
+
+    # Combine existing and new data, removing duplicates (keep last occurrence)
+    combined_data = pd.concat([existing_data, read_file], ignore_index=True).drop_duplicates(keep='last')
+
+    # Save combined data to CSV
+    combined_data.to_csv(f'dataset/data/{file.split(".xls")[0]}.csv' if aba is None else f'dataset/data/{aba}.csv',
+                         index=False, header=True, sep=',', decimal=',', encoding='utf-8-sig', na_rep="")
 
 
 def snake_small_case(column):
@@ -52,4 +61,5 @@ def snake_small_case(column):
 
 if __name__ == '__main__':
     find_all_files()
+
 
