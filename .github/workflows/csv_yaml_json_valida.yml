@@ -37,11 +37,11 @@ jobs:
       #  uses: stefanzweifel/git-auto-commit-action@v4
       #  with:
       #    commit_message: Cria datapackage.json via script.
-       - name: Create dynamic documentation
-         run: task documentation
-       - name: Commit markdown files
-         uses: stefanzweifel/git-auto-commit-action@v4
-         with:
+      - name: Create dynamic documentation
+        run: task documentation
+      - name: Commit markdown files
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
           commit_message: Cria arquivos markdown via script.
       - name: Local dataset validation
         run: task validate
