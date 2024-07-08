@@ -1,82 +1,428 @@
 {
-  "name": "pda-dataset-template",
   "profile": "data-package",
   "resources": [
     {
-      "description": "Insira a descrição/explicação detalhada deste recurso.",
+      "dialect": {
+        "delimiter": ","
+      },
       "encoding": "utf-8-sig",
       "format": "csv",
       "hashing": "md5",
-      "name": "template",
+      "name": "pda-dataset-template",
       "path": "data/template.csv",
       "profile": "tabular-data-resource",
       "schema": {
         "fields": [
           {
             "name": "orgao",
-            "type": "integer"
+            "type": "integer",
+            "title": "código do órgão",
+            "constraints": {
+              "required": true
+            }
           },
           {
             "name": "masp_adm",
-            "type": "integer"
+            "type": "string",
+            "title": "MASP com admissão concatenada",
+            "constraints": {
+              "required": true
+            }
           },
           {
             "name": "nome",
-            "type": "string"
+            "type": "string",
+            "title": "Nome do servidor",
+            "constraints": {
+              "required": true
+            }
           },
           {
             "name": "masp",
-            "type": "integer"
+            "type": "string",
+            "title": "MASP com dígito verificador",
+            "constraints": {
+              "required": true
+            }
           },
           {
             "name": "adm",
-            "type": "integer"
+            "type": "integer",
+            "title": "Número da admissão",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+              ]
+            }
           },
           {
             "name": "carreira",
-            "type": "string"
+            "type": "string",
+            "title": "Sigla do nome da carreira",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "AA",
+                "AACT",
+                "AAE",
+                "AAG",
+                "AAMB",
+                "AAPE",
+                "AAS",
+                "AATEL",
+                "ACULT",
+                "ADES",
+                "AEB",
+                "AEDS",
+                "AEPS",
+                "AFAZ",
+                "AFGMQ",
+                "AFRAE",
+                "AFRE",
+                "AGA",
+                "AGAS",
+                "AGDA",
+                "AGL",
+                "AGMQ",
+                "AGOV",
+                "AGPR",
+                "AGRE",
+                "AGSE",
+                "AGSS",
+                "AGTOP",
+                "AIG",
+                "AN",
+                "ANAE",
+                "ANDR",
+                "ANE",
+                "ANEDS",
+                "ANGES",
+                "ANGL",
+                "ANGPD",
+                "ANGRE",
+                "ANHH",
+                "ANPAG",
+                "ANPOL",
+                "ANSS",
+                "ANU",
+                "AP",
+                "APAG",
+                "APOL",
+                "ASAE",
+                "ASB",
+                "ASDP",
+                "ASE",
+                "ASEDS",
+                "ASGPD",
+                "ASO",
+                "ASP",
+                "AST",
+                "ASTEL",
+                "ATB",
+                "ATE",
+                "ATHH",
+                "ATSS",
+                "ATV",
+                "AUAS",
+                "AUDES",
+                "AUDI",
+                "AUDP",
+                "AUDR",
+                "AUGA",
+                "AUGAS",
+                "AUGMQ",
+                "AUGPR",
+                "AUGSS",
+                "AUHH",
+                "AUMB",
+                "AUNIV",
+                "AUPE",
+                "AUS",
+                "AUSG",
+                "AUSS",
+                "AUST",
+                "AUTO",
+                "AUTOP",
+                "BAIL",
+                "BOLSA",
+                "BPCMC",
+                "CAGM",
+                "DL",
+                "EEB",
+                "EGDA",
+                "EP",
+                "EPGS",
+                "EP-I",
+                "EP-II",
+                "EPPGG",
+                "FATOR",
+                "FISAG",
+                "FISCA",
+                "FTOR",
+                "GAMB",
+                "GAPE",
+                "GCT",
+                "GCULT",
+                "GDP",
+                "GEFAZ",
+                "GGOV",
+                "GRAES",
+                "GTEL",
+                "GTOP",
+                "IP-I",
+                "IP-II",
+                "JNR1A",
+                "JNR1E",
+                "JNR1O",
+                "JNR1T",
+                "JNR2A",
+                "JNR2E",
+                "JNR2O",
+                "JNR2T",
+                "JNR3A",
+                "JNR3E",
+                "JNR3O",
+                "JNR3T",
+                "JNR4E",
+                "JNR4O",
+                "JNR4T",
+                "MADS",
+                "MAGAS",
+                "MCXA",
+                "MED",
+                "MEDHH",
+                "MEDSS",
+                "MEDUN",
+                "ML",
+                "MP",
+                "MUS",
+                "MUSC",
+                "OJR3",
+                "OSO",
+                "PAR",
+                "PCPP",
+                "PCT",
+                "PE",
+                "PEB",
+                "PEMT",
+                "PENF",
+                "PES",
+                "PPMC",
+                "PR",
+                "PROFA",
+                "SFEJ",
+                "TACT",
+                "TAG",
+                "TAGM",
+                "TAJ1",
+                "TAJ2",
+                "TAMB",
+                "TAPE",
+                "TAS",
+                "TCULT",
+                "TDE",
+                "TDES",
+                "TDR",
+                "TEPS",
+                "TFAZ",
+                "TGA",
+                "TGL",
+                "TGPR",
+                "TGRE",
+                "TGS",
+                "TIG",
+                "TOS",
+                "TPAG",
+                "TPOL",
+                "TSS",
+                "TST",
+                "TTV",
+                "TUNIV",
+                "TUS"
+              ]
+            }
           },
           {
             "name": "nivelatual",
-            "type": "any"
+            "type": "string",
+            "title": "Nível ATUAL da carreira do servidor",
+            "constraints": {
+              "required": false,
+              "enum": [
+                "I",
+                "II",
+                "III",
+                "IV",
+                "V",
+                "VI",
+                "VII",
+                "VIII",
+                "T",
+                "T1",
+                "T2",
+                "ESPEC",
+                "GERAL",
+                "TITUL",
+                "SUBST"
+              ]
+            }
           },
           {
             "name": "grau_atual",
-            "type": "string"
+            "type": "string",
+            "title": "Grau ATUAL da carreira do servidor",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H",
+                "I",
+                "IE",
+                "II",
+                "J",
+                "K",
+                "L",
+                "M",
+                "N",
+                "O",
+                "P"
+              ]
+            }
           },
           {
             "name": "nivelnovo",
-            "type": "any"
+            "type": "string",
+            "title": "Nível NOVO da carreira do servidor",
+            "constraints": {
+              "required": false,
+              "enum": [
+                "I",
+                "II",
+                "III",
+                "IV",
+                "V",
+                "VI",
+                "VII",
+                "VIII",
+                "T",
+                "T1",
+                "T2",
+                "ESPEC",
+                "GERAL",
+                "TITUL",
+                "SUBST"
+              ]
+            }
           },
           {
             "name": "graunovo",
-            "type": "string"
+            "type": "string",
+            "title": "Grau NOVO da carreira do servidor",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H",
+                "I",
+                "IE",
+                "II",
+                "J",
+                "K",
+                "L",
+                "M",
+                "N",
+                "O",
+                "P"
+              ]
+            }
           },
           {
             "name": "grnatureza",
-            "type": "integer"
+            "type": "integer",
+            "title": "Grupo da natureza da promoção ou progressão",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "33"
+              ]
+            }
           },
           {
             "name": "sqnatureza",
-            "type": "integer"
+            "type": "integer",
+            "title": "Sequencial da natureza da progressão ou progressão",
+            "constraints": {
+              "enum": [
+                "034",
+                "035",
+                "070",
+                "071",
+                "111",
+                "112",
+                "61",
+                "63",
+                "138",
+                "145",
+                "147",
+                "156",
+                "157",
+                "161",
+                "261",
+                "363",
+                "48",
+                "60",
+                "62",
+                "146",
+                "148",
+                "162",
+                "263"
+              ]
+            }
           },
           {
             "name": "dtpublicacao",
-            "type": "date"
+            "type": "date",
+            "constraints": {
+              "required": true
+            }
           },
           {
             "name": "dtinicio",
-            "type": "date"
+            "type": "date",
+            "constraints": {
+              "required": true
+            }
           },
           {
             "name": "simbolo",
-            "type": "string"
+            "type": "string",
+            "title": "Símbolo do vencimento correspondente ao nível da carreira",
+            "description": "Corresponde ao atual, para progressão, porque nõa muda nível. E, para promoção, será o nível novo.",
+            "constraints": {
+              "required": true
+            }
           }
         ]
       },
-      "scheme": "file",
-      "title": "Insira um título humanamente legível para este recurso."
+      "scheme": "file"
     }
-  ],
-  "title": "Pda dataset template"
+  ]
 }
